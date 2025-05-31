@@ -5,10 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
-const port = 3000;
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('I am learning express.js with typescript!!');
 });
-app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`);
-});
+exports.default = app;
+/**
+ * Basic file structure for this project
+ * server --> server handling like - starting, closing, error handling of server. only related to server
+ * app --> routing handle, middleware, route related error
+ * app folder --> app business logic handling like - create, read, update, delete and database related works.
+ */ 

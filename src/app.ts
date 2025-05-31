@@ -1,11 +1,15 @@
 import express, { Application, Request, Response } from 'express'
 const app: Application = express()
-const port = 3000
 
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!')
+  res.send('I am learning express.js with typescript!!');
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+export default app;
+
+/**
+ * Basic file structure for this project
+ * server --> server handling like - starting, closing, error handling of server. only related to server
+ * app --> routing handle, middleware, route related error
+ * app folder --> app business logic handling like - create, read, update, delete and database related works.
+ */
