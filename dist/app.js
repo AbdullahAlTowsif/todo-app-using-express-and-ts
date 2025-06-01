@@ -43,9 +43,11 @@ app.get('/error', (req, res, next) => __awaiter(void 0, void 0, void 0, function
         next(error);
     }
 }));
+// 404 error handler
 app.use((req, res, next) => {
     res.status(404).json({ message: "Sorry can't find that route!" });
 });
+// global error handler
 app.use((error, req, res, next) => {
     if (error) {
         console.log("Error", error);

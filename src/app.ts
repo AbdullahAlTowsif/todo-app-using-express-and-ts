@@ -34,12 +34,12 @@ app.get('/error', async (req: Request, res: Response, next: NextFunction) => {
     next(error)
   }
 });
-
+// 404 error handler
 app.use((req: Request, res: Response, next: NextFunction) => {
   res.status(404).json({message: "Sorry can't find that route!"})
 })
 
-
+// global error handler
 app.use((error: any, req: Request, res: Response, next: NextFunction) => {
   if (error) {
     console.log("Error", error);
