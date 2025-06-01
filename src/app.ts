@@ -1,7 +1,5 @@
 import express, { Application, Request, Response } from 'express'
 const app: Application = express();
-import fs from "fs";
-import path from 'path';
 import { todosRouter } from './app/todos/todos.routes';
 
 app.use(express.json());

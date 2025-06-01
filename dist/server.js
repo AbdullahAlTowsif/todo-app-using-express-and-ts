@@ -24,5 +24,3 @@ const bootstrap = () => __awaiter(void 0, void 0, void 0, function* () {
     });
 });
 bootstrap();
-// mongodb
-// pWxrQUWjyedie1Ng

@@ -13,6 +13,3 @@ const bootstrap = async () => {
 };
 
 bootstrap();
-
-// mongodb
-// pWxrQUWjyedie1Ng
